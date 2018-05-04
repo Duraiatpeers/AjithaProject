@@ -1,0 +1,49 @@
+
+<!-- saved from url=(0058)file:///H:/Ajitha/math%20exhibition%20website/ABUSIVE.HTML -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>TELL THE TRUTH</title>
+</head>
+
+
+<body>
+<marquee behavior="scroll" direction="left"><h1>BE HONEST</h1></marquee>
+<h3>HAVE YOU EVER USED ABUSIVE LANGUAGE IN YOUR LIFE?</h3><br><br>
+
+<script>
+function redColor() {
+document.body.style.backgroundColor = "red";
+}
+
+function greenColor() {
+document.body.style.backgroundColor = "green";
+}
+
+function blueColor() {
+document.body.style.backgroundColor = "blue";
+}
+
+</script>
+
+
+
+<form action="/poll.php" method="post">
+
+<input type="radio" name="status" onclick="redColor()" value="YES" <?php if (isset($status) && $status=="YES") echo "checked";?> YES<br>
+<br>
+   
+<input type="radio" name="status" onclick="greenColor()" value="NO" <?php if (isset($status) && $status=="NO") echo "checked";?> NO<br>
+<br>
+
+<input type="radio" name="status" onclick="blueColor()" value="SOMETIMES" <?php if (isset($status) && $status=="SOMETIMES") echo "checked";?> SOMETIMES<br>
+<br>
+
+    Name: <input type="text" name="name" value="" <?php echo $name;?>
+<br><br>    
+    Gender: <input type="text" name="gender" value="" <?php echo $gender;?>
+<br><br>
+<input type="submit" value="submit">
+
+</form>
+
+ </body></html>
